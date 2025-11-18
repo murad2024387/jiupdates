@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">جماعت اسلامی اپ ڈیٹس | Jamaat-e-Islami Updates</title>
+    <meta name="description" content="جماعت اسلامی کی تازہ ترین سرگرمیوں، اجتماعات اور اعلانات" id="meta-description">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>جماعت اسلامی اپ ڈیٹس</h1>
+                <p>Jamaat-e-Islami Updates</p>
+            </div>
+            <div class="nav-links">
+                <a href="#/events" id="nav-events">سرگرمیاں</a>
+                <a href="#/subscribe">سبسکرائب</a>
+                <a href="#/about">معلومات</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="main-content-router">
+
+            <section class="hero" id="events-list-view">
+                <div class="hero-content container">
+                    <h2>جماعت اسلامی کی تازہ ترین معلومات</h2>
+                    <p>مرکزی، صوبائی، ضلعی اور مقامی سطح کی سرگرمیوں سے باخبر رہیں</p>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-level="all">سب</button>
+                        <button class="filter-btn" data-level="Central">مرکزی</button>
+                        <button class="filter-btn" data-level="Provincial">صوبائی</button>
+                        <button class="filter-btn" data-level="District">ضلعی</button>
+                        <button class="filter-btn" data-level="Local">مقامی</button>
+                    </div>
+                </div>
+
+                <section id="events" class="events-section">
+                    <div class="container">
+                        <h3>تازہ ترین سرگرمیاں</h3>
+                        <div id="events-list" class="events-grid">
+                            <div class="loading">لوڈ ہو رہا ہے...</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="subscribe" class="subscribe-section">
+                    <div class="container">
+                        <h3>اپ ڈیٹس حاصل کریں</h3>
+                        <p>ای میل، واٹس ایپ یا ٹیلیگرام پر تازہ ترین اطلاعات حاصل کریں</p>
+
+                        <form id="subscribe-form" class="subscribe-form">
+                            <div class="form-group">
+                                <label for="name">نام</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">ای میل</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">فون نمبر</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label>سطح کی اطلاعات</label>
+                                <div class="level-checkboxes">
+                                    <label><input type="checkbox" name="levels" value="Central" checked> مرکزی</label>
+                                    <label><input type="checkbox" name="levels" value="Provincial"> صوبائی</label>
+                                    <label><input type="checkbox" name="levels" value="District"> ضلعی</label>
+                                    <label><input type="checkbox" name="levels" value="Local"> مقامی</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">سبسکرائب کریں</button>
+                        </form>
+
+                        <div id="subscribe-message" class="message"></div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="event-detail-view" class="event-detail-section container" style="display:none; padding: 4rem 1rem;">
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 جماعت اسلامی اپ ڈیٹس. تمام حقوق محفوظ ہیں.</p>
+            <p>سرکاری ذرائع سے حاصل کردہ معلومات</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
